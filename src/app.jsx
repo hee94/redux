@@ -1,5 +1,5 @@
 import React from 'react';
-import Todo from './components/todo';
+import TodoContainer from './containers/todocontainer';
 import CounterContainer from './containers/countercontainer';
 
 const App = (props) => {
@@ -7,7 +7,7 @@ const App = (props) => {
     <div>
       <CounterContainer />
       <hr />
-      <Todo />
+      <TodoContainer />
     </div>
   )
 }

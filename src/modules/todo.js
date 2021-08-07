@@ -21,7 +21,7 @@ export const toggle =id=>({
     type:TOGGLE,
     id
 });
-export const remove =id =({
+export const remove =id =>({
     type:REMOVE,
     id
 })
@@ -39,15 +39,11 @@ const initState ={
             text: '리덕스2',
             done: true
         },
-        {
-            id:3,
-            text: '리덕스3',
-            done: true
-        },
+        
     ]
 };
 
-const todo =(state = initState, action) =>{
+const todos =(state = initState, action) =>{
     switch(action.type){
         case CHANGE_INPUT:
             return{
@@ -74,4 +70,4 @@ const todo =(state = initState, action) =>{
     }
 }
 
-export default todo;
+export default todos;
