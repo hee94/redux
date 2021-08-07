@@ -1,10 +1,15 @@
+import React from 'react';
+import Counter from './components/counter'
+import Todo from './components/todo';
 
-import './app.css';
-
-function App() {
-  return (
-    <h1>hello</h1>
-  );
+const App = (props) => {
+  return(
+    <div>
+      <Counter number={0}></Counter>
+      <hr />
+      <Todo />
+    </div>
+  )
 }
 
 export default App;
